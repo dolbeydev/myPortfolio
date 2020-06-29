@@ -19,33 +19,69 @@ a:link, a:visited {
     width: 100%;
     height: auto;
     display: inline-block;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .nav-bar li {
     display: inline-block;
-    padding: 20px
+    padding: 30px 40px;
+    font-weight: bold;
 }
 
-.logo {
-    font-family: 'Poiret One', cursive;
-    font-size: 10em;
+.navlink .dolbeydev {
+    float: left;
+}
+
+/* LOGO/CONTENT/MAIN */
+
+.headings {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dolbeydev {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-size: 16px;
     padding: 100px;
 }
 
-.logo h1 {
+.reid h1 {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
     font-weight: 100;
+    text-align: left;
+    width: 100%;
+    margin-left: 100px;
+    text-shadow: .5px .5px darkgrey;
+}
+
+main html {
+    position: relative;
+    min-height: 100vh;
+    width: 50%
+}
+
+main {
+    width: 900px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+article {
+    padding-bottom: 2.5rem;
 }
 
 footer {
     position: absolute;
     width: 100%;
     height: 2.5rem;
-    border: 1px solid red;
-    min-height: 100vh;
     bottom: 0;
 }
 
 footer ul li {
+    padding: 10px 20px;
     display: inline-block;
 }
