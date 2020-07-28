@@ -1,87 +1,221 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
+
 
 html {
-    background-color: aliceblue;
+    scroll-behavior: smooth;
+  }
+  
+  #section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 95VH;
+    background-color: #ECECEC;
+    font-family: 'Questrial', sans-serif;
+  }
+  
+  #section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Questrial', sans-serif;
+    height: 100vh;
+    background-color: #F3D250;
+  }
+  #section3 {
+    height: 100vh;
+    background-color: #ECECEC;
+  }
+  #section4 {
+    height: 100vh;
+    background-color: #c1e3fb;
+  }
+  #section5 {
+    height: 100vh;
+    background-color: #ECECEC;
+  }
+  #section6 {
+    height: 100vh;
+    background-color: #5DA2D5;
+  }
+
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #101010;
+    display: block;
+    transition: 0.6s;
+    font-family: arial;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ECECEC;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+
+  }
+  
+  #nav {
+    transition: margin-left .5s;
+    padding: 16px;
+    background-color: #ECECEC;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+#landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-a:link, a:visited {
-    text-decoration: none;
-    text-transform: uppercase;
+.dolbeycontainer ul {
+    display: inline-block;
+}
+
+/* Headlines */
+.dolbeydev, li {
+    text-align: center;
+    font-size: 80px;
+    display: inline-block;
+    list-style: none;
+}
+
+/* We design */
+.landing  p {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+/* LEARN MORE */
+.landing h3 {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+
+.about h2 {
+    text-align: center;
+    font-size: 80px;
+}
+.about p {
+    text-align: center;
+    padding: 40px 0px;
+    width: 600px;
+    line-height: 3vh;
+}
+
+.landing h3 a:link {
+    display: block;
+    color: black;
+}
+.landing a, .about a:visited {
     color: black;
 }
 
-/* navbar */
+.wbutton, .ybutton{
+        width: 140px;
+        height: 45px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        }
+      
+      .wbutton:hover {
+        background-color: #F3D250;
+        box-shadow: 0px 15px 20px #F3D250;
+        color: #fff;
+        transform: translateY(-7px);
+      }
 
-.nav-bar {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+        .ybutton:hover {
+            background-color: #ECECEC;
+            box-shadow: 0px 15px 20px #ECECEC;
+            color: black;
+            transform: translateY(-7px);
+      }
+
+
+
+/* DEV with background of code */
+.codeword{
+    background-image: url(https://w.wallhaven.cc/full/j5/wallhaven-j5elow.jpg);
+    background-size: cover;
+    background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+    font-size: 80px;
+
+  }
+
+
+
+
+footer ul li img {
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px;
 }
 
-.nav-bar li {
-    display: inline-block;
-    padding: 30px 40px;
-    font-weight: bold;
+footer ul {
+    list-style-type: none;
 }
 
-.navlink .dolbeydev {
-    float: left;
-}
 
-/* LOGO/CONTENT/MAIN */
-
-.headings {
-    text-align: center;
-    margin-top: 100px;
-}
-
-.dolbeydev {
-    font-family: 'Montserrat', sans-serif;
-    display: inline-block;
-    font-size: 16px;
-    padding: 100px;
-}
-
-.reid h1 {
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4em;
-    font-weight: 100;
-    text-align: left;
-    width: 100%;
-    margin-left: 100px;
-    text-shadow: .5px .5px darkgrey;
-}
-
-main html {
-    position: relative;
-    min-height: 100vh;
-    width: 50%
-}
-
-main {
-    width: 900px;
-    border: 1px solid red;
-    text-align: center;
-}
-
-article {
-    padding-bottom: 2.5rem;
-}
-
-footer {
-    position: absolute;
-    width: 100%;
-    height: 2.5rem;
-    bottom: 0;
-}
-
-footer ul li {
-    padding: 10px 20px;
-    display: inline-block;
-}

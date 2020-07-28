@@ -4,43 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dolbeydev.com</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-bar">
-                <li class="nav-link dolbeydev.com"> <a href="index.html">dolbeydev.com</a> </li>
-                <li class="nav-link home"> <a href="index.html">Home</a> </li>
-                <li class="nav-link portfolio"> <a href="portfolio.html">Portfolio</a> </li>
-                <li class="nav-link about"> <a href="about.html">About</a> </li>
-                <li class="nav-link contact"> <a href="contact.html">Contact</a> </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <article class="headings">
-                <section>
-                    <div class="reid myname">
-                        <h1>Reid Dolbey,</h1><br>
-                        <h1>Font-End Web Developer</h1>
+  
+<main>
+<section>
+ <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Contact</a>
+                      </div>
+                      <div id="nav">
+                      <button class="openbtn" onclick="openNav()">☰</button>
                     </div>
-                </section>
+        <div class="main" id="section1">
+            <!-- website nav -->
+            <header>
+                      <div id="landing" class="landing">
+                        <div class="dolbeycontainer">
+                        <ul class="dolbeydev">
+                        <li><h2>dolbey</h2></li><li class="codeword"><h2>dev</h2></li>
+                        </ul>
+                        </div>
+                        
+                        <p>'what we omit' >= 'what we commit'</p>
+                        <a href="#section2"><button class="wbutton">LEARN MORE</button></a>
+                      </div>
+                </nav>
+            </header>
+        </div>
+</section>        
+
+<section>
+        <div class="about" id="section2">
+          <h2>Hi, I'm Reid Dolbey</h2>
+          <p>I'm a self-taught Freelance Web Developer based in Melbourne, Australia. <br>
+            You could also say I'm a forklift driver, an operations manager, a casino dealer, a tour guide, a wedding supervisor, a startup founder, and a dj. <br> I love learning new skills and challenging myself.
+            </p>
+          <a href="#section3"><button class="ybutton">STACK</button></a>
+        </div>
+</section>
+
+<section>
+        <div class="stack" id="section3">
+          <h2>Skillset</h2>
+          
+            <article>
+                <div class="skillset-container">
+                    <div class="skillset-grid">
+                        <div class="skillset-grid-item first-item">
+                            <a href=""><img src="" alt="project thumbnail 1"></a>
+                        </div>
+                        <div class="skillset-grid-item">
+                            <a href=""><img src="" alt="project thumbnail 2"></a>
+                        </div>
+                        <div class="skillset-grid-item">
+                            <a href=""><img src="" alt="project thumbnail 3"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+          <a href="#section4"><button class="wbutton">Meet the Team</button></a>
+        </div>
+</section>
+
+<section>
+        <div class="Portfolio" id="section4">
+          <h2>RECENT WORK</h2>
+          <article>
+            <div class="folio-container">
+                <div class="folio-grid">
+                    <div class="folio-grid-item first-item">
+                        <a href=""><img src="" alt="project thumbnail 1"></a>
+                    </div>
+                    <div class="folio-grid-item">
+                        <a href=""><img src="" alt="project thumbnail 2"></a>
+                    </div>
+                    <div class="folio-grid-item">
+                        <a href=""><img src="" alt="project thumbnail 3"></a>
+                    </div>
+                    <div class="folio-grid-item">
+                        <a href=""><img src="" alt="project thumbnail 4"></a>
+                    </div>
+                </div>
+            </div>
         </article>
+</section>
+
+<section>
+        <div class="Team" id="section5">
+          <h2>MEET THE TEAM</h2>
+          <p>I'm a self-taught web developer based in Melbourne, Australia. <br>
+            You could also say i'm a forklift driver, an operations manager, a casino dealer, a tour guide, a wedding supervisor, a startup founder, and a dj. Let's just say i've tried many hats, but now i loving my coding fedora! 
+            </p>
+          <a href="#section6">VIEW MY CURRENT PROJECTS</a>
+        </div>
+</section>
+
+<section>
+        <div class="Contact" id="section6">
+          <h2>CONTACT</h2>
+          <p>I'm a self-taught web developer based in Melbourne, Australia. <br>
+            You could also say i'm a forklift driver, an operations manager, a casino dealer, a tour guide, a wedding supervisor, a startup founder, and a dj. Let's just say i've tried many hats, but now i loving my coding fedora! 
+            </p>
+          <a href="#section1">VIEW MY CURRENT PROJECTS</a>
+        </div>
+</section>
+   
+
+
+
+
     </main>
 
     <footer>
         <ul>
-            <li> <a href="index.html">Home</a> </li>
-            <li> <a href="portfolio.html">Portfolio</a> </li>
-            <li> <a href="about.html">About</a> </li>
-            <li> <a href="contact.html">Contact</a> </li>
+            <div class="social-navbar">
+                <li class="socal-link"> <a href="contact.html"> <img src="email1.png" alt="email icon link"></a></li>
+                <li class="socal-link"> <a href="https://www.facebook.com/"><img src="facebook1.png" alt="facebook icon link"></a></li>
+                <li class="socal-link"> <a href="https://www.instagram.com/"><img src="instagram1.png" alt="instagram icon link"></a></li>
+                <li class="socal-link"> <a href="https://au.linkedin.com/"><img src="linkedin1.png" alt="linkedin icon link"></a></li>
+                <li class="socal-link"> <a href="https://github.com/dolbeydev"><img src="github1.png" alt="linkedin icon link"></a></li>
+            </div>
         </ul>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
 </body>
 </html>
