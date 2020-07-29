@@ -7,6 +7,8 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   
   #section1 {
@@ -14,7 +16,7 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 95VH;
+    height: 100VH;
     background-color: #ECECEC;
     font-family: 'Questrial', sans-serif;
   }
@@ -55,7 +57,7 @@ html {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: grey;
+    background-color:  #f1f1f1;
     overflow-x: hidden;
     transition: 0.8s;
     padding-top: 60px;
@@ -64,15 +66,27 @@ html {
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #101010;
     display: block;
     transition: 0.6s;
     font-family: arial;
   }
   
-  .sidebar a:hover {
+  .sidebar img,a:hover {
     color: #f1f1f1;
+  }
+
+  .sidebar img {
+    height: 50px;
+  }
+
+  .nav-socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 60vh
   }
   
   .sidebar .closebtn {
@@ -82,13 +96,15 @@ html {
     font-size: 36px;
     margin-left: 50px;
   }
+
   
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #ECECEC;
+    background-color: transparent;
     padding: 10px 15px;
     border: none;
+    position: fixed;
   }
   
   .openbtn:hover {
@@ -160,7 +176,7 @@ html {
     color: black;
 }
 
-.wbutton, .ybutton{
+.wbutton, .ybutton, .bbutton{
         width: 140px;
         height: 45px;
         font-family: 'Roboto', sans-serif;
@@ -187,8 +203,15 @@ html {
 
         .ybutton:hover {
             background-color: #ECECEC;
-            box-shadow: 0px 15px 20px #ECECEC;
-            color: black;
+            box-shadow: 0px 15px 20px;
+            color: #fff;
+            transform: translateY(-7px);
+        }
+
+        .bbutton:hover {
+            background-color: #c1e3fb;
+            box-shadow: 0px 15px 20px;
+            color: #fff;
             transform: translateY(-7px);
       }
 
@@ -205,8 +228,119 @@ html {
 
   }
 
+.skillset-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.skillset-grid {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillset-grid img {
+  width: 100px;
+  height: auto;
+}
+
+.skillset-grid-item {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+.skillset-grid-item p {
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+}
+
+.skillset h2 {
+  text-align: center;
+    font-size: 80px;
+    font-family: 'Questrial', sans-serif;
+    padding: 40px 0px;
+}
+
+.skillset a {
+  display: flex;
+  justify-content: center;
+}
+
+.skillset-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.skillset-p {
+  width: 100%;
+  line-height: 2.2rem;
+}
+
+.portfolio h2 {
+  text-align: center;
+    font-size: 80px;
+    display: inline-block;
+    list-style: none;
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
 
 
+
+.folio-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.folio-grid {
+  height: 100%;
+  width: 584px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.folio-grid-item {
+  width: 250px;
+  height: 250px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.folio-grid-item img {
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+  display: block;
+}
+
+.folio-grid-item img:hover {
+  transition
+}
+
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+}
 
 footer ul li img {
     height: 50px;
