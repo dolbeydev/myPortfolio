@@ -167,6 +167,7 @@ html {
 .landing  p {
     text-align: center;
     padding: 40px 0px;
+    font-size: 16px;
 }
 
 /* LEARN MORE */
@@ -186,7 +187,7 @@ html {
     text-align: center;
     padding: 40px 0px;
     width: 600px;
-    line-height: 3vh;
+    line-height: 3.8vh;
 }
 
 .landing h3 a:link {
@@ -255,12 +256,18 @@ html {
   align-items: center;
   height: 80vh;
 }
+.skillset-container h3 {
+  text-shadow: 1px 1px 2px lightgrey;
+}
 
 .skillset-grid {
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  background-color: white;
 }
 .skillset-grid img {
   width: 100px;
@@ -274,8 +281,15 @@ html {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 0px 20px;
+  padding: 40px 20px;
 }
+
+.skillset-grid-item:nth-child(2) {
+  border-right: 1px solid lightgrey;
+  border-left:  1px solid lightgrey;
+ 
+}
+
 .skillset-grid-item p {
   font-family: 'Questrial', sans-serif;
   text-align: center;
