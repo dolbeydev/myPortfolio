@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 
@@ -17,9 +18,32 @@ html {
     justify-content: center;
     flex-direction: column;
     height: 100VH;
-    background-color: #ECECEC;
     font-family: 'Questrial', sans-serif;
-  }
+
+   
+    background: linear-gradient(139deg, #43cab9, #ffffff, #d4d4d4, #a7ffe4);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
   
   #section2 {
     display: flex;
@@ -36,7 +60,7 @@ html {
   }
   #section4 {
     height: 100vh;
-    background-color: #c1e3fb;
+    background-color: #F3D250;
   }
   #section5 {
     height: 100vh;
@@ -44,7 +68,7 @@ html {
   }
   #section6 {
     height: 100vh;
-    background-color: #5DA2D5;
+    background-color: #F3D250;
   }
 
 
@@ -99,7 +123,7 @@ html {
 
   
   .openbtn {
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     background-color: transparent;
     padding: 10px 15px;
@@ -107,14 +131,10 @@ html {
     position: fixed;
   }
   
-  .openbtn:hover {
-
-  }
   
   #nav {
     transition: margin-left .5s;
-    padding: 16px;
-    background-color: #ECECEC;
+    background-color: transparent;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -140,9 +160,10 @@ html {
     font-size: 80px;
     display: inline-block;
     list-style: none;
+
 }
 
-/* We design */
+/* design+developement+coffee */
 .landing  p {
     text-align: center;
     padding: 40px 0px;
@@ -287,6 +308,13 @@ html {
   line-height: 2.2rem;
 }
 
+.portfolio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
 .portfolio h2 {
   text-align: center;
     font-size: 80px;
@@ -295,7 +323,6 @@ html {
     font-family: 'Questrial', sans-serif;
     display: flex;
     justify-content: center;
-    padding: 40px 0px;
 }
 
 
@@ -306,40 +333,92 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
 }
 
 .folio-grid {
-  height: 100%;
-  width: 584px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
 }
 
 .folio-grid-item {
-  width: 250px;
-  height: 250px;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
 }
 
 .folio-grid-item img {
   object-fit: cover;
-  height: 250px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
   display: block;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+  border-radius: 25px;
 }
 
 .folio-grid-item img:hover {
-  transition
+  -webkit-transform: scale(1.03);
+	transform: scale(1..03);
 }
 
-.portfolio-button {
+
+.team h2 {
+  text-align: center;
+  font-size: 80px;
+  display: inline-block;
+  font-family: 'Questrial', sans-serif;
   display: flex;
   justify-content: center;
+  padding: 40px 0px;
+}
+
+.team-container {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-grid {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-grid-item {
+  height: 250px;
+  width: 250px;
+  border-radius: 150px;
+  margin: 0px 40px;
+}
+
+.team-grid-item img {
+  object-fit: contain;
+  height: 250px;
+  border-radius: 150px;
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.team-grid-item img:hover {
+  opacity: .5;
+}
+
+.team-button {
+    display: flex;
+    justify-content: center;
 }
 
 footer ul li img {
@@ -353,3 +432,76 @@ footer ul {
 }
 
 
+
+
+
+
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 45px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #F3D250;
+  padding: 10px;
+  font-family: 'Questrial', sans-serif;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.column img {
+  width: 100%;
+  max-width: 400px;
+  float: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
