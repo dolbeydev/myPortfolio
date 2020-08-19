@@ -21,7 +21,6 @@
                         <a href="#section5">STAFF</a>
                         <a href="#section6">CONTACT</a>
                         <div class="nav-socials">
-                        <a href="#"><img src="facebook1.png" alt=""></a>
                         <a href="https://www.linkedin.com/in/reid-dolbey2020/"><img src="linkedin1.png" alt=""></a>
                         <a href="https://github.com/dolbeydev"><img src="github1.png" alt=""></a>
                         <a href="#section6"><img src="email1.png" alt=""></a>
@@ -40,7 +39,7 @@
                         </ul>
                         </div>
                         
-                        <p>Design + Development + Cats 🐈🐈</p>
+                        <p>Reid Dolbey - Web Developer</p>
                         <a href="#section2"><button class="wbutton">LEARN MORE</button></a>
                       </div>
                 </nav>
@@ -51,8 +50,8 @@
 <section>
         <div class="about" id="section2">
           <h2>Hi, I'm Reid Dolbey</h2>
-          <p>I'm a self-taught Freelance Web Developer based in Melbourne, Australia. <br>
-            You could also say I'm a forklift driver, an operations manager, <br> a croupier, a tour guide, a wedding manager, and a dj. <br>I love learning new skills and challenging myself.
+          <p>I'm a self-taught Freelance Web Developer based in Melbourne, Australia.
+            You could also say I'm a forklift driver, an operations manager,a croupier, a tour guide, a wedding manager, and a dj. <br>I love learning new skills and challenging myself.
             </p>
           <a href="#section3"><button class="ybutton">SKILLSET</button></a>
         </div>
@@ -85,7 +84,7 @@
                         </div>
                         <div class="skillset-p">
                           <p>I love coding things from scratch, and enjoy tinkering with frameworks</p><br>
-                          <p>HTML, CSS, Javascript, <br> GIT, React</p><br>
+                          <p>HTML, CSS, Javascript, <br> GIT</p><br>
                           <p>Bootstrap</p>
                           <p>Github</p>
                             <p>Terminal</p>
@@ -122,11 +121,9 @@
                     <div class="folio-grid-item first-item">
                         <a href="https://menacingbeats.github.io/menacingbeats.com/"><img src="mb.jpg" alt="project thumbnail 1"></a>
                     </div><div class="folio-grid-item">
-                        <a href=""><img src="lads.jpg" alt="project thumbnail 2"></a>
-                    </div><div class="folio-grid-item">
                         <a href="http://barbergeneral.com.au/"><img src="bg.png" alt="project thumbnail 3"></a>
                     </div><div class="folio-grid-item">
-                        <a href=""><img src="js.jpg" alt="project thumbnail 4"></a>
+                        <a href="https://github.com/dolbeydev/130JSProjects"><img src="js.jpg" alt="project thumbnail 4"></a>
                     </div>
                </div>
           </div>
@@ -142,19 +139,19 @@
                 <div class="team-grid-item first-item">
                   <a href=""><img src="bill.jpg" alt="project thumbnail 1">
                   <div class="overlay1">
-                    <div class="text1">Bill - Operations</div>
+                    <div class="text1">Mr. Bill <br><br>Operations Manager</div>
                   </div>
                   </a>
                 </div><div class="team-grid-item">
                     <a href=""><img src="georgie.jpg" alt="project thumbnail 2">
                       <div class="overlay2">
-                        <div class="text2">Georgie - Sales</div>
+                        <div class="text2">Georgie <br><br>Senior Sales</div>
                       </div>
                     </a>
                 </div><div class="team-grid-item">
                     <a href=""><img src="reid.jpg" alt="project thumbnail 3">
                       <div class="overlay3">
-                        <div class="text3">Reid - Web Developer</div>
+                        <div class="text3">Reid Dolbey <br><br> Web Developer</div>
                       </div>
                     </a>
             </div>
@@ -163,59 +160,49 @@
       <a class="team-button" href="#section6"><button class="wbutton">CONTACT</button></a>
 </section>
 
-<section>
-        <div class="contact" id="section6">
-          <div class="container">
-            <div class="" style="text-align:center">
-              <h2>Contact Us</h2>
-              <p>Flick me a message anytime, one of the cats will be in touch 🐈</p>
-            </div>
-            <div class="row">
-              <div class="column">
-                <img src="reid.jpg">
+  <section>
+    <div class="contact" id="section6">
+            <div class="container">
+              <div class="" style="text-align:center">
+                <h2>Contact</h2>
+                <p>Feel free to reach out anytime, one of the cats will be in touch 🐈</p>
               </div>
-              <div class="column">
-                <form action="mailto:reid@dolbeydev.com" method="POST" enctype="multipart/form-data" name="EmailForm">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                  <input type="submit" value="Submit">
-                </form>
+              <div class="row">
+                <div class="column">
+                  <img src="reid.jpg">
+                </div>
+                <div class="column">
+                  <form method="post" action="contactform.php" name="email-form">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <label for="emailfrom">Email</label>
+                    <input type="email" id="emailfrom" name="emailfrom" placeholder="Your email.." required>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="What can i do to help?" style="height:170px" required></textarea>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
               </div>
             </div>
+      <footer>
+          <div class="footer-container">
+            <div class="footer-box">
+              <ul>
+                <li><a href="reid@dolbeydev.com">reid@dolbeydev.com</a></li>
+                <li>| Hand-coded by me, Reid Dolbey</li>
+                <div class="footer-socials">
+                <li> <a href="https://www.linkedin.com/in/reid-dolbey2020/"><img src="linkedin1.png" alt=""></a></li>
+                <li><a href="https://github.com/dolbeydev"><img src="github1.png" alt=""></a></li>
+              </div>
+              </ul>
+            </div>
           </div>
-  <footer>
-      <div class="footer-container">
-        <div class="footer-box">
-          <ul>
-            <li><a href="reid@dolbeydev.com">reid@dolbeydev.com</a></li>
-            <li>| Hand-coded by me, Reid Dolbey</li>
-            <div class="footer-socials">
-            <li> <a href="https://www.linkedin.com/in/reid-dolbey2020/"><img src="linkedin1.png" alt=""></a></li>
-            <li><a href="https://github.com/dolbeydev"><img src="github1.png" alt=""></a></li>
-            <li> <a href="#section6"><img src="email1.png" alt=""></a></li>
-          </div>
-          </ul>
-        </div>
-      </div>
-  </footer>
-</div>
-</section>
-   
-
-
-
-
-    </main>
+      </footer>
+  </div>
+  </section>
+</main>
     <script>
         function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
